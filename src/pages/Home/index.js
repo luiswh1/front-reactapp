@@ -140,7 +140,7 @@ export default function Home() {
                             style={{ width: '500px', backgroundColor: 'white' }}
                             label="Comentário (100 caracteres)"
                             multiline
-                            rowsMax={6}
+                            rowsMax={1}
                             value={descricao}
                             onChange={e => setDescricao(e.target.value)}
                         /> <br /> <br />
