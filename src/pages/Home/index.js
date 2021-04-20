@@ -12,11 +12,8 @@ import FooterApp from '../../components/Footer';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-
 import Comentario from '../../components/Comentario';
 import commentApi from '../../services/scripts';
-
-
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -91,12 +88,12 @@ export default function Home() {
                     return handleOpen()
                 });
         } else {
-            alert("Preencha todos os campos de informação (e-mail, nome e telefone)" )
+            alert("Preencha todos os campos de informação (e-mail, nome e telefone)")
             e.preventDefault();
             return
         }
         e.preventDefault();
-        
+
 
     }
 
@@ -155,7 +152,7 @@ export default function Home() {
                             Comentar</Button>
                     </form>
                 </div>
-        <br />
+                <br />
                 <hr />
                 {comentarios.map((comentario) => (
                     <Comentario key={comentario.id} comentario={comentario} />
@@ -231,7 +228,7 @@ export default function Home() {
                         <p id="transition-modal-description" style={{ color: 'black' }}>Já recebi suas informações e logo estarei entrando em contato, obrigado.</p>
 
                         <Button
-                            style={{width: "100px", marginLeft:"195px"}}
+                            style={{ width: "100px", marginLeft: "195px" }}
                             onClick={handleClose}
                             variant="contained"
                             color="primary">
