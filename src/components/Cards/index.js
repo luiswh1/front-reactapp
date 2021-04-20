@@ -11,13 +11,13 @@ const cards = [
     {
         image: 'https://d33wubrfki0l68.cloudfront.net/7647aad926bd221090e7e9e829e32c0ff125fbe5/2a0a2/assets/images/webp/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/reactjs.webp',
         name: 'React',
-        description: 'Minha Atual tecnologia de estudo, atualmente me encontro com 40 horas de experiencia em ReactJS.'
+        description: 'Minha Atual tecnologia de estudo e também a base deste projeto, atualmente me encontro com aproximadamente 100 horas de experiencia em React. '
     },
 
     {
         image: 'https://miro.medium.com/max/930/0*MNVJq_8e0SJoqZb5.jpg',
         name: 'Node',
-        description: 'Minha Stack para o Back-end, já possuo varios projetos feitos com a growdev, aproximadamente 200 horas de experiencia.'
+        description: 'Minha Stack para o Back-end, já possuo vários projetos feitos com a growdev, aproximadamente 300 horas de experiencia.' 
 
     },
     {
@@ -29,12 +29,12 @@ const cards = [
     {
         image: 'https://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-social.png',
         name: 'Bootstrap',
-        description: 'O Primeiro no qual eu aprendi a utilizar, possuo varias horas de experiencia com bootstrap.'
+        description: 'O Primeiro no qual eu aprendi a utilizar, possuo várias horas de experiencia com bootstrap.' 
     },
     {
         image: 'https://i.morioh.com/2020/01/11/cfd101025c1a.jpg',
         name: 'Material-UI',
-        description: 'Estou praticando e aprendendo sobre Material-UI junto com ReactJS por tanto tenho pouco conhecimento mas estou melhorando.'
+        description: 'Estou praticando e aprendendo sobre Material-UI junto com ReactJS por tanto tenho pouco conhecimento, mas estou melhorando, tanto que este projeto foi feito utilizando Material-UI' 
 
     },
     {
@@ -47,19 +47,12 @@ const cards = [
 ]
 
 const useStyles = makeStyles((theme) => ({
-    heroContent: {
-        padding: theme.spacing(8, 0, 6),
-    },
-
-    heroButtons: {
-        marginTop: theme.spacing(4),
-    },
     cardGrid: {
         paddingTop: theme.spacing(8),
         paddingBottom: theme.spacing(8),
     },
     card: {
-        height: '100%',
+        height: '400px',
         display: 'flex',
         flexDirection: 'column',
     },
@@ -69,7 +62,6 @@ const useStyles = makeStyles((theme) => ({
     cardContent: {
         flexGrow: 1,
     },
-   
 }));
 
 
@@ -80,8 +72,7 @@ export default function CardTech(props) {
 
     return(
         <Container className={classes.cardGrid} maxWidth="md">
-                    {/* End hero unit */}
-                    <h1>Minhas Técnôlogias e expêriencias</h1><br></br>
+                    <h1>Minhas Tecnologias e experiências: </h1><br></br>
                     <Grid container spacing={4}>
                         {cards.map((card) => (
                             <Grid item key={card} xs={12} sm={6} md={4}>
@@ -90,8 +81,6 @@ export default function CardTech(props) {
                                         className={classes.cardMedia}
                                         image={card.image}
                                         title={card.name}
-
-
                                     />
                                     <CardContent className={classes.cardContent}>
                                         <Typography gutterBottom variant="h5" component="h2">

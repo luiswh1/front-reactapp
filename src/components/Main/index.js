@@ -76,20 +76,19 @@ export default function MainAvatar() {
                             height="50%">
                         </img>
                         <Typography className={classes.descriptionAndButtons} variant="h5" align="center" color="textSecondary" paragraph>
-                            Extrovertido e comunicativo, busco cada dia mais me adaptar e a aprender as têcnologias
-             mais utilizadas no mercado. <br></br>
-             Meu foco em resolver problemas é absoluto e eu só paro com a solução em mãos.
+                        Extrovertido e comunicativo, busco cada dia mais me adaptar e a aprender as tecnologias mais utilizadas no mercado. <br />
+Meu foco em resolver problemas é absoluto e eu só paro com a solução em mãos. 
             </Typography>
                         <div className={classes.heroButtons}>
                             <Grid container spacing={2} justify="center">
                                 <Grid item>
-                                    <Button  href="https://github.com/luiswh1?tab=repositories" className={classes.buttonsGit} variant="contained" color="primary">
+                                    <Button  target="_blank" href="https://github.com/luiswh1?tab=repositories" className={classes.buttonsGit} variant="contained" color="primary">
                                         <GitHubIcon /> 
                                     </Button>
                                 </Grid>
                                 <Grid item>
-                                    <Button href="https://www.linkedin.com/in/luis-henrique-maciel-weber-9a41751b1/" className={classes.buttonsGit} variant="contained" color="primary">
-                                        <LinkedInIcon />
+                                    <Button target="_blank" href="https://www.linkedin.com/in/luis-henrique-maciel-weber-9a41751b1/" className={classes.buttonsGit} variant="contained" color="primary">
+                                        <LinkedInIcon /> 
                                     </Button>
                                 </Grid>
                             </Grid>

@@ -24,10 +24,6 @@ class Comment {
             telefone: telefone
         });
 
-        if(response) {
-            window.location.href = "/confirm"
-        }
-
         return response.data;
     }
 

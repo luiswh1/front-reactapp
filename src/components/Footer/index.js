@@ -4,9 +4,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     footer: {
-        padding: theme.spacing(6),
+        padding: theme.spacing(2),
         backgroundColor: 'inherit',
-        color: "FFFFFF"
+        color: "FFFFFF",
+        marginTop: '40px'
     },
 }));
 
@@ -19,7 +20,7 @@ export default function FooterApp() {
 </Typography>
         <Typography className={classes.footer} variant="subtitle1" align="center"  component="p">
             Projeto para o processo seletivo do Garupa - 17/04/2021 <br />
-            Técnônologias utilizadas: ReactJS , NodeJS, PostgreSQL, Heroku , Material-UI.
+            Tecnologias utilizadas: ReactJS , NodeJS, PostgreSQL, Heroku , Material-UI.
 </Typography>
     </footer>
     )

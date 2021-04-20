@@ -9,20 +9,20 @@ import Paper from '@material-ui/core/Paper';
 import { Container } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 
-function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
+function createData(name,nome, email, idade, telefone) {
+    return { name, nome, email, idade, telefone };
 }
 
 const rows = [
-    createData('Nome:', 'Luis Henrique Maciel Weber'),
-    createData('E-mail:', 'luisw.h@live.com'),
-    createData('Idade:', 21),
-    createData('Telefone:', '(53)98466-4813'),
-    createData('Cidade:', 'Pelotas - RS'),
-    createData('Endereço:', 'Rua Leopoldo Broad - 2478'),
-    createData('Escolaridade:', 'Cursando Terceiro ano do Médio a noite'),
-    createData('Cursando:', 'Desenvolvimento Web FullStack - Growdev'),
-    createData('Nivel de Inglês:', 'Intêrmediário'),
+    createData('Nome:', 'Luis Henrique Maciel Weber'), 
+    createData('E-mail:', 'luisw.h@live.com'), 
+    createData('Idade:', 21), 
+    createData('Telefone:', '(53)98466-4813'), 
+    createData('Cidade:', 'Pelotas - RS'), 
+    createData('Endereço:', 'Rua Leopoldo Broad - 2478'), 
+    createData('Escolaridade:', 'Cursando Terceiro ano do Médio a noite'), 
+    createData('Cursando:', 'Desenvolvimento Web FullStack - Growdev'), 
+    createData('Nível de Inglês:', 'Intermediário'), 
 ];
 
 
@@ -52,10 +52,10 @@ export default function TableData(props) {
                                     <TableCell component="th" scope="row">
                                         {row.name}
                                     </TableCell>
-                                    <TableCell align="right">{row.calories}</TableCell>
-                                    <TableCell align="right">{row.fat}</TableCell>
-                                    <TableCell align="right">{row.carbs}</TableCell>
-                                    <TableCell align="right">{row.protein}</TableCell>
+                                    <TableCell align="right">{row.nome}</TableCell>
+                                    <TableCell align="right">{row.email}</TableCell>
+                                    <TableCell align="right">{row.idade}</TableCell>
+                                    <TableCell align="right">{row.telefone}</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>
