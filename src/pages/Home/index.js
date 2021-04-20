@@ -57,7 +57,7 @@ export default function Home() {
                     buscaDados();
                 });
         } else {
-            alert("Preencha os campos de “Nome” e “Comentário” ")
+            alert("Insira os campos de “Nome” e “Comentário” para postar um comentario ")
             e.preventDefault();
             return
         }
@@ -141,7 +141,7 @@ export default function Home() {
                         <TextField
                             id="descricao"
                             style={{ width: '500px', backgroundColor: 'white' }}
-                            label="Comentário "
+                            label="Comentário (100 caracteres)"
                             multiline
                             rowsMax={6}
                             value={descricao}

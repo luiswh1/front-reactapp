@@ -15,16 +15,14 @@ const cards = [
     },
 
     {
-        image: 'https://miro.medium.com/max/930/0*MNVJq_8e0SJoqZb5.jpg',
+        image: 'https://miro.medium.com/max/1131/0*JH_HgIXBQvuenmUl.jpg',
         name: 'Node',
         description: 'Minha Stack para o Back-end, já possuo vários projetos feitos com a growdev, aproximadamente 300 horas de experiencia.' 
-
     },
     {
         image: 'https://miro.medium.com/max/1800/1*6ahbWjp_g9hqhaTDSJOL1Q.png',
         name: 'JavaScript',
         description: 'Minha Stack principal de programação, possuo bastante pratica com JS e mais de 500 horas de experiencia.'
-
     },
     {
         image: 'https://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-social.png',
@@ -34,14 +32,22 @@ const cards = [
     {
         image: 'https://i.morioh.com/2020/01/11/cfd101025c1a.jpg',
         name: 'Material-UI',
-        description: 'Estou praticando e aprendendo sobre Material-UI junto com ReactJS por tanto tenho pouco conhecimento, mas estou melhorando, tanto que este projeto foi feito utilizando Material-UI' 
-
+        description: 'Estou praticando e aprendendo sobre Material-UI junto com ReactJS por tanto tenho pouco conhecimento, mas estou melhorando, tanto que este projeto foi feito utilizando Material-UI.' 
     },
     {
-        image: 'https://miro.medium.com/max/800/0*z58cqZWxu2_4q5-g.jpg',
+        image: 'https://e-tinet.com/wp-content/uploads/2018/10/PostgreSQL-como-instalar-1024x512.png',
         name: 'PostgreSQL',
         description: 'Meu Gerenciador de Banco de dados mais utilizado, tenho bastante experiencia com back-end utilizando o mesmo.'
-
+    },
+    {
+        image: 'https://miro.medium.com/max/1200/1*kg8aAUNxI055OhNhT04srQ.png',
+        name: 'Heroku',
+        description: 'Plataforma que utilizo para subir meus Apps front e back, inclusive está aplicação está upada no Heroku.'
+    },
+    {
+        image: 'https://www.webdevdrops.com/git-desfazer-commit-d410d630f11c/images/git-logo.png',
+        name: 'Git',
+        description: 'A Stack para controle e versionamento é o Git.'
     },
 
 ]
@@ -53,6 +59,7 @@ const useStyles = makeStyles((theme) => ({
     },
     card: {
         height: '400px',
+        width:'230px',
         display: 'flex',
         flexDirection: 'column',
     },
@@ -73,9 +80,9 @@ export default function CardTech(props) {
     return(
         <Container className={classes.cardGrid} maxWidth="md">
                     <h1>Minhas Tecnologias e experiências: </h1><br></br>
-                    <Grid container spacing={4}>
+                    <Grid container spacing={3}>
                         {cards.map((card) => (
-                            <Grid item key={card} xs={12} sm={6} md={4}>
+                            <Grid item key={card} xs={6} sm={6} md={3}>
                                 <Card className={classes.card}>
                                     <CardMedia
                                         className={classes.cardMedia}
