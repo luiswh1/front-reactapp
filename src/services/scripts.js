@@ -27,6 +27,15 @@ class Comment {
         return response.data;
     }
 
+    async deleteComment(id) {
+        const response = await api.delete(`comentarios/${id}`, {
+
+        });
+        
+        return response.data;
+    }
+
+
 }
 
 export default new Comment();

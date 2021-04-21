@@ -12,6 +12,7 @@ import FooterApp from '../../components/Footer';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+
 import Comentario from '../../components/Comentario';
 import commentApi from '../../services/scripts';
 
@@ -155,7 +156,7 @@ export default function Home() {
                 <br />
                 <hr />
                 {comentarios.map((comentario) => (
-                    <Comentario key={comentario.id} comentario={comentario} />
+                    <Comentario key={comentario.id} comentario={comentario} reload={buscaDados}  />
                 ))}
             </Container>
             <br />

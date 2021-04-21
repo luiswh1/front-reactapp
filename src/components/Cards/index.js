@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
+
 const cards = [
     {
         image: 'https://d33wubrfki0l68.cloudfront.net/7647aad926bd221090e7e9e829e32c0ff125fbe5/2a0a2/assets/images/webp/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/reactjs.webp',
@@ -70,6 +71,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
 }));
+
 
 
 
