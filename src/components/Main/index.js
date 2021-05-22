@@ -46,7 +46,7 @@ export default function MainAvatar() {
                            <Typography className={classes.nome} component="h1" variant="h3" color="textPrimary" gutterBottom>
                             Luis Weber
                          </Typography>  
-                            <img className={classes.image} alt="" src="https://scontent.fpet4-1.fna.fbcdn.net/v/t1.6435-9/43086294_2183954985225980_5066821374912233472_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_ohc=27P_1_3LnSAAX9Hi5az&_nc_ht=scontent.fpet4-1.fna&oh=3df1a828b9945aa6f0044d3c82ba0529&oe=60A1C794"
+                            <img className={classes.image} alt="" src="https://scontent.fpet4-1.fna.fbcdn.net/v/t1.6435-9/43086294_2183954985225980_5066821374912233472_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_ohc=r2Ma_-JPk5AAX8GUSGw&_nc_ht=scontent.fpet4-1.fna&oh=63089349a6a3d4a67e2e28482f21b4d6&oe=60CD4914"
                             width="50%"
                             height="50%">
                             </img>
