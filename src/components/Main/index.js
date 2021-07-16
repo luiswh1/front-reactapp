@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import avatar from '../../styles/images/avatar.jpg'
 
 const useStyles = makeStyles((theme) => ({
     image: {
@@ -46,7 +47,7 @@ export default function MainAvatar() {
                            <Typography className={classes.nome} component="h1" variant="h3" color="textPrimary" gutterBottom>
                             Luis Weber
                          </Typography>  
-                            <img className={classes.image} alt="" src="https://scontent.fpet4-1.fna.fbcdn.net/v/t1.6435-9/43086294_2183954985225980_5066821374912233472_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_ohc=r2Ma_-JPk5AAX8GUSGw&_nc_ht=scontent.fpet4-1.fna&oh=63089349a6a3d4a67e2e28482f21b4d6&oe=60CD4914"
+                            <img className={classes.image} alt="" src={avatar}
                             width="50%"
                             height="50%">
                             </img>
