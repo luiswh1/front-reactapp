@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(2),
         backgroundColor: 'inherit',
         color: "FFFFFF",
-        marginTop: '40px'
+        marginTop: '20px'
     },
 }));
 
@@ -19,7 +19,7 @@ export default function FooterApp() {
             Desenvolvido por Luis Weber
 </Typography>
         <Typography className={classes.footer} variant="subtitle1" align="center"  component="p">
-            Projeto para o processo seletivo do Garupa - 17/04/2021 <br />
+            Curriculo apresentado na entrevista da #Meta - 24/08/2021 <br />
             Tecnologias utilizadas: ReactJS , NodeJS, PostgreSQL, Heroku , Material-UI.
 </Typography>
     </footer>
